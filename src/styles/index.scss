@@ -1,0 +1,39 @@
+@use 'reset';
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Nunito Sans', sans-serif;
+  background: #faf7f5;
+  padding: 0;
+  margin: 0;
+}
+
+main {
+  min-height: 300px;
+  padding: 2rem;
+}
+
+header,
+footer {
+  background: #ccc;
+  min-height: 100px;
+  padding: 2rem;
+}
+
+.dark {
+  body {
+    background: #222;
+    color: #eee;
+  }
+
+  header,
+  footer {
+    background: #444;
+    color: #d1f0b8;
+    min-height: 100px;
+    padding: 2rem;
+  }
+}
