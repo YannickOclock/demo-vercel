@@ -1,4 +1,3 @@
-import React from 'react';
 import useAppStore, { globalUpdateEmail } from '../../../store/Store';
 
 export default function FooterContent() {

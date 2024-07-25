@@ -1,4 +1,3 @@
-import React from 'react';
 import './Root.scss';
 import clsx from 'clsx';
 import { Outlet } from 'react-router-dom';

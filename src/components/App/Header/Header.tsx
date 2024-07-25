@@ -1,7 +1,6 @@
-import React from 'react';
 import './Header.scss';
-import useAppStore from '../../../store/Store';
 import { NavLink } from 'react-router-dom';
+import useAppStore from '../../../store/Store';
 
 export default function Header() {
   const { email, updateDarkTheme, darkTheme } = useAppStore();

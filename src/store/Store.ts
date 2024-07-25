@@ -1,12 +1,11 @@
 import { create } from 'zustand';
-import { combine, persist } from 'zustand/middleware';
+import { combine } from 'zustand/middleware';
 
 // use suivi de votre nom pour le store
 // En utilisant combine, l'inférence est gérée par Typescript.
 // Je n'ai plus besoin d'écrire à la main le type de mon store
 // Typescript devine automatiquement ce qu'il y a dans mon store
-/*const useAppStore = create(
-  persist(
+const useAppStore = create(
   combine(
     {
       darkTheme: false,
@@ -16,18 +15,6 @@ import { combine, persist } from 'zustand/middleware';
       updateDarkTheme: (darkTheme: boolean) => set({ darkTheme }),
       updateEmail: (email: string) => set({ email }),
     })
-  )
-);*/
-
-const useAppStore = create(
-  persist(
-    (set, get) => ({
-      darkTheme: false,
-      email: '',
-      updateDarkTheme: (darkTheme: boolean) => set({ darkTheme }),
-      updateEmail: (email: string) => set({ email }),
-    }),
-    { name: 'my-store' }
   )
 );
 
